@@ -28,7 +28,7 @@ class AlbumsStore: ObservableObject {
             }
     }
 
-    func photosListView(elements: [Photo]) -> PhotosListView {
-        return presenter.photosListView(elements: elements)
+    func photosListView(albumTitle: String, elements: [Photo]) -> PhotosListView {
+        return presenter.photosListView(albumTitle: albumTitle, elements: elements)
     }
 }

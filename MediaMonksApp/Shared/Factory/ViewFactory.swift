@@ -15,6 +15,10 @@ class SwiftUIFactory: ViewFactory {
     }
 
     func photosListView(viewModel: PhotosViewModel) -> PhotosListView {
-        return PhotosListView()
+        let router = PhotosRouter(viewFactory: SwiftUIFactory())
+        let presenter = PhotosPresenter(router: router)
+        let store = PhotosStore(viewModel: viewModel,
+                                presenter: presenter)
+        return PhotosListView(store: store)
     }
 }

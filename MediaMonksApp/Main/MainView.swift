@@ -31,7 +31,7 @@ struct MainView: View {
                 ScrollView(showsIndicators: false) {
                     LazyVGrid (columns: columns, spacing: 28) {
                         ForEach(store.viewModel.albums) { element in
-                            NavigationLink(destination: store.photosListView(elements: element.photos)) {
+                            NavigationLink(destination: store.photosListView(albumTitle: element.name, elements: element.photos)) {
                                 ImageFetcher(urlImage: element.cover)
                                 .modifier(ImageGradiantModifier(title: element.name,
                                                                 photosCount: element.photosCount))
@@ -40,7 +40,7 @@ struct MainView: View {
                             }
                         }
                     }
-                    .padding([.bottom, .top], 8)
+                    .padding([.bottom, .top], 16)
                 }
             }
             .padding([.trailing, .leading], 36)

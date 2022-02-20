@@ -4,7 +4,7 @@ import Combine
 protocol AlbumsPresenterProtocol: AnyObject {
     func fetchAlbums()
     var albumsPublisher: CurrentValueSubject<AlbumsViewModel.Content, Error> { get }
-    func photosListView(elements: [Photo]) -> PhotosListView
+    func photosListView(albumTitle: String, elements: [Photo]) -> PhotosListView
 }
 
 class AlbumsPresenter: AlbumsPresenterProtocol {
@@ -52,8 +52,8 @@ extension AlbumsPresenter {
 }
 
 extension AlbumsPresenter {
-    func photosListView(elements: [Photo]) -> PhotosListView {
-        let viewModel =  PhotosViewModel(photos: elements.map {
+    func photosListView(albumTitle: String, elements: [Photo]) -> PhotosListView {
+        let viewModel =  PhotosViewModel(albumTitle: albumTitle, photos: elements.map {
             return PhotoViewModel(photo: $0)
         })
         return router.photosListView(viewModel: viewModel)
