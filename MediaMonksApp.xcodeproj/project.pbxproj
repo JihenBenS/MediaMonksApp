@@ -12,6 +12,19 @@
 		8CCC0EF98456C4213601EF00 /* Pods_MediaMonksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */; };
 		C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */; };
 		C6C0830C27C2BAF300A12674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */; };
+		C6C0831827C2C27F00A12674 /* AlbumsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0831227C2C27F00A12674 /* AlbumsRouter.swift */; };
+		C6C0831927C2C27F00A12674 /* AlbumsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0831327C2C27F00A12674 /* AlbumsPresenter.swift */; };
+		C6C0831A27C2C27F00A12674 /* AlbumsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0831427C2C27F00A12674 /* AlbumsInteractor.swift */; };
+		C6C0831B27C2C27F00A12674 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0831527C2C27F00A12674 /* MainView.swift */; };
+		C6C0831C27C2C27F00A12674 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0831627C2C27F00A12674 /* AlbumsViewModel.swift */; };
+		C6C0831D27C2C27F00A12674 /* AlbumsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0831727C2C27F00A12674 /* AlbumsStore.swift */; };
+		C6C0832627C2C30A00A12674 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832027C2C30A00A12674 /* TextModifier.swift */; };
+		C6C0832727C2C30A00A12674 /* ImageViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832127C2C30A00A12674 /* ImageViewModifier.swift */; };
+		C6C0832827C2C30A00A12674 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832227C2C30A00A12674 /* ImageFetcher.swift */; };
+		C6C0832927C2C30A00A12674 /* Cookie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6C0832527C2C30A00A12674 /* Cookie-Regular.ttf */; };
+		C6C0832C27C2C32400A12674 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832B27C2C32400A12674 /* ViewFactory.swift */; };
+		C6C0832E27C2C39A00A12674 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832D27C2C39A00A12674 /* Constants.swift */; };
+		C6C0833027C2C58700A12674 /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832F27C2C58700A12674 /* AlbumsService.swift */; };
 		C6CC540127B99B47002920B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CC540027B99B47002920B0 /* Assets.xcassets */; };
 		C6CC540E27B99B47002920B0 /* MediaMonksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC540D27B99B47002920B0 /* MediaMonksAppTests.swift */; };
 		C6CC541827B99B47002920B0 /* MediaMonksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC541727B99B47002920B0 /* MediaMonksAppUITests.swift */; };
@@ -49,6 +62,19 @@
 		BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaMonksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMonksApp.swift; sourceTree = "<group>"; };
 		C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6C0831227C2C27F00A12674 /* AlbumsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsRouter.swift; sourceTree = "<group>"; };
+		C6C0831327C2C27F00A12674 /* AlbumsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsPresenter.swift; sourceTree = "<group>"; };
+		C6C0831427C2C27F00A12674 /* AlbumsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsInteractor.swift; sourceTree = "<group>"; };
+		C6C0831527C2C27F00A12674 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C6C0831627C2C27F00A12674 /* AlbumsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
+		C6C0831727C2C27F00A12674 /* AlbumsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsStore.swift; sourceTree = "<group>"; };
+		C6C0832027C2C30A00A12674 /* TextModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		C6C0832127C2C30A00A12674 /* ImageViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModifier.swift; sourceTree = "<group>"; };
+		C6C0832227C2C30A00A12674 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		C6C0832527C2C30A00A12674 /* Cookie-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cookie-Regular.ttf"; sourceTree = "<group>"; };
+		C6C0832B27C2C32400A12674 /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		C6C0832D27C2C39A00A12674 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6C0832F27C2C58700A12674 /* AlbumsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
 		C6CC53F927B99B45002920B0 /* MediaMonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CC540027B99B47002920B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6CC540927B99B47002920B0 /* MediaMonksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMonksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +143,9 @@
 		C692D48427BAD7D80040C503 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C6C0832D27C2C39A00A12674 /* Constants.swift */,
+				C6C0832A27C2C32400A12674 /* Factory */,
+				C6C0831E27C2C30A00A12674 /* UI */,
 				C692D48527BAD7E10040C503 /* Network Layer */,
 			);
 			path = Shared;
@@ -137,6 +166,62 @@
 				C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6C0831127C2C27F00A12674 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0831527C2C27F00A12674 /* MainView.swift */,
+				C6C0831727C2C27F00A12674 /* AlbumsStore.swift */,
+				C6C0831227C2C27F00A12674 /* AlbumsRouter.swift */,
+				C6C0831327C2C27F00A12674 /* AlbumsPresenter.swift */,
+				C6C0831427C2C27F00A12674 /* AlbumsInteractor.swift */,
+				C6C0831627C2C27F00A12674 /* AlbumsViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C6C0831E27C2C30A00A12674 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0831F27C2C30A00A12674 /* Modifiers */,
+				C6C0832327C2C30A00A12674 /* UIComponents */,
+				C6C0832427C2C30A00A12674 /* Fonts */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C6C0831F27C2C30A00A12674 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0832027C2C30A00A12674 /* TextModifier.swift */,
+				C6C0832127C2C30A00A12674 /* ImageViewModifier.swift */,
+				C6C0832227C2C30A00A12674 /* ImageFetcher.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		C6C0832327C2C30A00A12674 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		C6C0832427C2C30A00A12674 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0832527C2C30A00A12674 /* Cookie-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C6C0832A27C2C32400A12674 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0832B27C2C32400A12674 /* ViewFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		C6CC53F027B99B45002920B0 = {
@@ -165,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */,
+				C6C0831127C2C27F00A12674 /* Main */,
 				C692D48427BAD7D80040C503 /* Shared */,
 				C6CC540027B99B47002920B0 /* Assets.xcassets */,
 				C6C0830A27C2BAF300A12674 /* Preview Content */,
@@ -203,6 +289,7 @@
 		C6CC543127B9A9D5002920B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C6C0832F27C2C58700A12674 /* AlbumsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -319,6 +406,7 @@
 				C6CC540127B99B47002920B0 /* Assets.xcassets in Resources */,
 				C6C0830C27C2BAF300A12674 /* Preview Assets.xcassets in Resources */,
 				C6CC542C27B99FD9002920B0 /* db.json in Resources */,
+				C6C0832927C2C30A00A12674 /* Cookie-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,9 +534,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C0831C27C2C27F00A12674 /* AlbumsViewModel.swift in Sources */,
+				C6C0832627C2C30A00A12674 /* TextModifier.swift in Sources */,
+				C6C0831927C2C27F00A12674 /* AlbumsPresenter.swift in Sources */,
+				C6C0831B27C2C27F00A12674 /* MainView.swift in Sources */,
 				C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */,
 				C6CC542E27B9A915002920B0 /* Photo.swift in Sources */,
+				C6C0831827C2C27F00A12674 /* AlbumsRouter.swift in Sources */,
+				C6C0831D27C2C27F00A12674 /* AlbumsStore.swift in Sources */,
+				C6C0833027C2C58700A12674 /* AlbumsService.swift in Sources */,
+				C6C0832727C2C30A00A12674 /* ImageViewModifier.swift in Sources */,
+				C6C0832827C2C30A00A12674 /* ImageFetcher.swift in Sources */,
+				C6C0831A27C2C27F00A12674 /* AlbumsInteractor.swift in Sources */,
+				C6C0832E27C2C39A00A12674 /* Constants.swift in Sources */,
 				C6CC543027B9A973002920B0 /* Album.swift in Sources */,
+				C6C0832C27C2C32400A12674 /* ViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -591,7 +691,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -618,6 +718,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,6 +749,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
