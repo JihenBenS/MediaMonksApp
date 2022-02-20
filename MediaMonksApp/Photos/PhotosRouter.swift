@@ -1,6 +1,7 @@
 import Foundation
 
 protocol PhotosRouterProtocol: AnyObject {
+    func photoDetailsView(viewModel: PhotoDetailsViewModel) -> PhotoDetailsView
 }
 
 class PhotosRouter: PhotosRouterProtocol {
@@ -9,5 +10,9 @@ class PhotosRouter: PhotosRouterProtocol {
     
     init(viewFactory: ViewFactory) {
         self.viewFactory = viewFactory
+    }
+
+    func photoDetailsView(viewModel: PhotoDetailsViewModel) -> PhotoDetailsView {
+        return viewFactory.photoDetailsView(viewModel: viewModel)
     }
 }
