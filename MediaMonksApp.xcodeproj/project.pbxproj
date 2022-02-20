@@ -12,6 +12,8 @@
 		8CCC0EF98456C4213601EF00 /* Pods_MediaMonksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */; };
 		C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */; };
 		C6C0830C27C2BAF300A12674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */; };
+		C6C0830E27C2BD7600A12674 /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0830D27C2BD7600A12674 /* AlbumsService.swift */; };
+		C6C0831027C2BD7F00A12674 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0830F27C2BD7F00A12674 /* Constants.swift */; };
 		C6CC540127B99B47002920B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CC540027B99B47002920B0 /* Assets.xcassets */; };
 		C6CC540E27B99B47002920B0 /* MediaMonksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC540D27B99B47002920B0 /* MediaMonksAppTests.swift */; };
 		C6CC541827B99B47002920B0 /* MediaMonksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC541727B99B47002920B0 /* MediaMonksAppUITests.swift */; };
@@ -49,6 +51,8 @@
 		BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaMonksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMonksApp.swift; sourceTree = "<group>"; };
 		C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6C0830D27C2BD7600A12674 /* AlbumsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
+		C6C0830F27C2BD7F00A12674 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6CC53F927B99B45002920B0 /* MediaMonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CC540027B99B47002920B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6CC540927B99B47002920B0 /* MediaMonksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMonksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 		C692D48427BAD7D80040C503 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C6C0830F27C2BD7F00A12674 /* Constants.swift */,
 				C692D48527BAD7E10040C503 /* Network Layer */,
 			);
 			path = Shared;
@@ -142,6 +147,7 @@
 		C6CC53F027B99B45002920B0 = {
 			isa = PBXGroup;
 			children = (
+				C6CC542B27B99FD9002920B0 /* db.json */,
 				C6CC53FB27B99B45002920B0 /* MediaMonksApp */,
 				C6CC540C27B99B47002920B0 /* MediaMonksAppTests */,
 				C6CC541627B99B47002920B0 /* MediaMonksAppUITests */,
@@ -168,7 +174,6 @@
 				C692D48427BAD7D80040C503 /* Shared */,
 				C6CC540027B99B47002920B0 /* Assets.xcassets */,
 				C6C0830A27C2BAF300A12674 /* Preview Content */,
-				C6CC542B27B99FD9002920B0 /* db.json */,
 				C6CC544527B9CE8B002920B0 /* Info.plist */,
 			);
 			path = MediaMonksApp;
@@ -203,6 +208,7 @@
 		C6CC543127B9A9D5002920B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C6C0830D27C2BD7600A12674 /* AlbumsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -446,9 +452,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C0831027C2BD7F00A12674 /* Constants.swift in Sources */,
 				C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */,
 				C6CC542E27B9A915002920B0 /* Photo.swift in Sources */,
 				C6CC543027B9A973002920B0 /* Album.swift in Sources */,
+				C6C0830E27C2BD7600A12674 /* AlbumsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
