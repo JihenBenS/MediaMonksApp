@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D1B56A24D4A5B8BC1CF8156 /* Pods_MediaMonksApp_MediaMonksAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F055B4302FCBFF9C510B2FA1 /* Pods_MediaMonksApp_MediaMonksAppUITests.framework */; };
+		7B50B6E283E5D9E592A0EC86 /* Pods_MediaMonksAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB07EB5E56BAFDC4F8DE9E2 /* Pods_MediaMonksAppTests.framework */; };
+		8CCC0EF98456C4213601EF00 /* Pods_MediaMonksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */; };
+		C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */; };
+		C6C0830C27C2BAF300A12674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */; };
+		C6CC540127B99B47002920B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CC540027B99B47002920B0 /* Assets.xcassets */; };
+		C6CC540E27B99B47002920B0 /* MediaMonksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC540D27B99B47002920B0 /* MediaMonksAppTests.swift */; };
+		C6CC541827B99B47002920B0 /* MediaMonksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC541727B99B47002920B0 /* MediaMonksAppUITests.swift */; };
+		C6CC541A27B99B47002920B0 /* MediaMonksAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC541927B99B47002920B0 /* MediaMonksAppUITestsLaunchTests.swift */; };
+		C6CC542C27B99FD9002920B0 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = C6CC542B27B99FD9002920B0 /* db.json */; };
+		C6CC542E27B9A915002920B0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC542D27B9A915002920B0 /* Photo.swift */; };
+		C6CC543027B9A973002920B0 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC542F27B9A973002920B0 /* Album.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6CC540A27B99B47002920B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CC53F127B99B45002920B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CC53F827B99B45002920B0;
+			remoteInfo = MediaMonksApp;
+		};
+		C6CC541427B99B47002920B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CC53F127B99B45002920B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CC53F827B99B45002920B0;
+			remoteInfo = MediaMonksApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D3EDDE339E8167F0A49B7F2 /* Pods-MediaMonksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonksAppTests.release.xcconfig"; path = "Target Support Files/Pods-MediaMonksAppTests/Pods-MediaMonksAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3497F794035247942A310B27 /* Pods-MediaMonksAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonksAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonksAppTests/Pods-MediaMonksAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B5A8067AF38BB309E665CB1 /* Pods-MediaMonksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonksApp.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonksApp/Pods-MediaMonksApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8AB07EB5E56BAFDC4F8DE9E2 /* Pods_MediaMonksAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaMonksAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4F83951E43517D28F69F2E /* Pods-MediaMonksApp-MediaMonksAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonksApp-MediaMonksAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MediaMonksApp-MediaMonksAppUITests/Pods-MediaMonksApp-MediaMonksAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4CBBB6611E0F5A6CFE6982C /* Pods-MediaMonksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonksApp.release.xcconfig"; path = "Target Support Files/Pods-MediaMonksApp/Pods-MediaMonksApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC1635F5F61A1F85C0D6A05F /* Pods-MediaMonksApp-MediaMonksAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaMonksApp-MediaMonksAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MediaMonksApp-MediaMonksAppUITests/Pods-MediaMonksApp-MediaMonksAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaMonksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMonksApp.swift; sourceTree = "<group>"; };
+		C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6CC53F927B99B45002920B0 /* MediaMonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CC540027B99B47002920B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6CC540927B99B47002920B0 /* MediaMonksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMonksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CC540D27B99B47002920B0 /* MediaMonksAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMonksAppTests.swift; sourceTree = "<group>"; };
+		C6CC541327B99B47002920B0 /* MediaMonksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMonksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CC541727B99B47002920B0 /* MediaMonksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMonksAppUITests.swift; sourceTree = "<group>"; };
+		C6CC541927B99B47002920B0 /* MediaMonksAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMonksAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6CC542B27B99FD9002920B0 /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = db.json; sourceTree = "<group>"; };
+		C6CC542D27B9A915002920B0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C6CC542F27B9A973002920B0 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C6CC544527B9CE8B002920B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F055B4302FCBFF9C510B2FA1 /* Pods_MediaMonksApp_MediaMonksAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaMonksApp_MediaMonksAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6CC53F627B99B45002920B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCC0EF98456C4213601EF00 /* Pods_MediaMonksApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC540627B99B47002920B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B50B6E283E5D9E592A0EC86 /* Pods_MediaMonksAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC541027B99B47002920B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1B56A24D4A5B8BC1CF8156 /* Pods_MediaMonksApp_MediaMonksAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1343CE418B70B3EE60AB443B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB3F2F011ADC5126C1195731 /* Pods_MediaMonksApp.framework */,
+				F055B4302FCBFF9C510B2FA1 /* Pods_MediaMonksApp_MediaMonksAppUITests.framework */,
+				8AB07EB5E56BAFDC4F8DE9E2 /* Pods_MediaMonksAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5BE252DDE0E2569CCE5D623 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A8067AF38BB309E665CB1 /* Pods-MediaMonksApp.debug.xcconfig */,
+				A4CBBB6611E0F5A6CFE6982C /* Pods-MediaMonksApp.release.xcconfig */,
+				9F4F83951E43517D28F69F2E /* Pods-MediaMonksApp-MediaMonksAppUITests.debug.xcconfig */,
+				AC1635F5F61A1F85C0D6A05F /* Pods-MediaMonksApp-MediaMonksAppUITests.release.xcconfig */,
+				3497F794035247942A310B27 /* Pods-MediaMonksAppTests.debug.xcconfig */,
+				1D3EDDE339E8167F0A49B7F2 /* Pods-MediaMonksAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C692D48427BAD7D80040C503 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C692D48527BAD7E10040C503 /* Network Layer */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C692D48527BAD7E10040C503 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC542A27B99DA7002920B0 /* Models */,
+				C6CC543127B9A9D5002920B0 /* Services */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		C6C0830A27C2BAF300A12674 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0830B27C2BAF300A12674 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6CC53F027B99B45002920B0 = {
+			isa = PBXGroup;
+			children = (
+				C6CC53FB27B99B45002920B0 /* MediaMonksApp */,
+				C6CC540C27B99B47002920B0 /* MediaMonksAppTests */,
+				C6CC541627B99B47002920B0 /* MediaMonksAppUITests */,
+				C6CC53FA27B99B45002920B0 /* Products */,
+				C5BE252DDE0E2569CCE5D623 /* Pods */,
+				1343CE418B70B3EE60AB443B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6CC53FA27B99B45002920B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC53F927B99B45002920B0 /* MediaMonksApp.app */,
+				C6CC540927B99B47002920B0 /* MediaMonksAppTests.xctest */,
+				C6CC541327B99B47002920B0 /* MediaMonksAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CC53FB27B99B45002920B0 /* MediaMonksApp */ = {
+			isa = PBXGroup;
+			children = (
+				C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */,
+				C692D48427BAD7D80040C503 /* Shared */,
+				C6CC540027B99B47002920B0 /* Assets.xcassets */,
+				C6C0830A27C2BAF300A12674 /* Preview Content */,
+				C6CC542B27B99FD9002920B0 /* db.json */,
+				C6CC544527B9CE8B002920B0 /* Info.plist */,
+			);
+			path = MediaMonksApp;
+			sourceTree = "<group>";
+		};
+		C6CC540C27B99B47002920B0 /* MediaMonksAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC540D27B99B47002920B0 /* MediaMonksAppTests.swift */,
+			);
+			path = MediaMonksAppTests;
+			sourceTree = "<group>";
+		};
+		C6CC541627B99B47002920B0 /* MediaMonksAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC541727B99B47002920B0 /* MediaMonksAppUITests.swift */,
+				C6CC541927B99B47002920B0 /* MediaMonksAppUITestsLaunchTests.swift */,
+			);
+			path = MediaMonksAppUITests;
+			sourceTree = "<group>";
+		};
+		C6CC542A27B99DA7002920B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC542D27B9A915002920B0 /* Photo.swift */,
+				C6CC542F27B9A973002920B0 /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C6CC543127B9A9D5002920B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6CC53F827B99B45002920B0 /* MediaMonksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CC541D27B99B47002920B0 /* Build configuration list for PBXNativeTarget "MediaMonksApp" */;
+			buildPhases = (
+				06538A5CEB8021C945A1BB9B /* [CP] Check Pods Manifest.lock */,
+				C6CC53F527B99B45002920B0 /* Sources */,
+				C6CC53F627B99B45002920B0 /* Frameworks */,
+				C6CC53F727B99B45002920B0 /* Resources */,
+				ED5D64D005D179010ECB53E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaMonksApp;
+			productName = MediaMonksApp;
+			productReference = C6CC53F927B99B45002920B0 /* MediaMonksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6CC540827B99B47002920B0 /* MediaMonksAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CC542027B99B47002920B0 /* Build configuration list for PBXNativeTarget "MediaMonksAppTests" */;
+			buildPhases = (
+				0341BE623FAC7848FAE9380D /* [CP] Check Pods Manifest.lock */,
+				C6CC540527B99B47002920B0 /* Sources */,
+				C6CC540627B99B47002920B0 /* Frameworks */,
+				C6CC540727B99B47002920B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6CC540B27B99B47002920B0 /* PBXTargetDependency */,
+			);
+			name = MediaMonksAppTests;
+			productName = MediaMonksAppTests;
+			productReference = C6CC540927B99B47002920B0 /* MediaMonksAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6CC541227B99B47002920B0 /* MediaMonksAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CC542327B99B47002920B0 /* Build configuration list for PBXNativeTarget "MediaMonksAppUITests" */;
+			buildPhases = (
+				54DDB57FAF16C29E9BB00162 /* [CP] Check Pods Manifest.lock */,
+				C6CC540F27B99B47002920B0 /* Sources */,
+				C6CC541027B99B47002920B0 /* Frameworks */,
+				C6CC541127B99B47002920B0 /* Resources */,
+				7E50CC06493991468EFF3431 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6CC541527B99B47002920B0 /* PBXTargetDependency */,
+			);
+			name = MediaMonksAppUITests;
+			productName = MediaMonksAppUITests;
+			productReference = C6CC541327B99B47002920B0 /* MediaMonksAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6CC53F127B99B45002920B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C6CC53F827B99B45002920B0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C6CC540827B99B47002920B0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C6CC53F827B99B45002920B0;
+					};
+					C6CC541227B99B47002920B0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C6CC53F827B99B45002920B0;
+					};
+				};
+			};
+			buildConfigurationList = C6CC53F427B99B45002920B0 /* Build configuration list for PBXProject "MediaMonksApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6CC53F027B99B45002920B0;
+			productRefGroup = C6CC53FA27B99B45002920B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6CC53F827B99B45002920B0 /* MediaMonksApp */,
+				C6CC540827B99B47002920B0 /* MediaMonksAppTests */,
+				C6CC541227B99B47002920B0 /* MediaMonksAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6CC53F727B99B45002920B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CC540127B99B47002920B0 /* Assets.xcassets in Resources */,
+				C6C0830C27C2BAF300A12674 /* Preview Assets.xcassets in Resources */,
+				C6CC542C27B99FD9002920B0 /* db.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC540727B99B47002920B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC541127B99B47002920B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0341BE623FAC7848FAE9380D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaMonksAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06538A5CEB8021C945A1BB9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaMonksApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54DDB57FAF16C29E9BB00162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaMonksApp-MediaMonksAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E50CC06493991468EFF3431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediaMonksApp-MediaMonksAppUITests/Pods-MediaMonksApp-MediaMonksAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediaMonksApp-MediaMonksAppUITests/Pods-MediaMonksApp-MediaMonksAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaMonksApp-MediaMonksAppUITests/Pods-MediaMonksApp-MediaMonksAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED5D64D005D179010ECB53E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediaMonksApp/Pods-MediaMonksApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediaMonksApp/Pods-MediaMonksApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaMonksApp/Pods-MediaMonksApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6CC53F527B99B45002920B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */,
+				C6CC542E27B9A915002920B0 /* Photo.swift in Sources */,
+				C6CC543027B9A973002920B0 /* Album.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC540527B99B47002920B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CC540E27B99B47002920B0 /* MediaMonksAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC540F27B99B47002920B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CC541A27B99B47002920B0 /* MediaMonksAppUITestsLaunchTests.swift in Sources */,
+				C6CC541827B99B47002920B0 /* MediaMonksAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6CC540B27B99B47002920B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6CC53F827B99B45002920B0 /* MediaMonksApp */;
+			targetProxy = C6CC540A27B99B47002920B0 /* PBXContainerItemProxy */;
+		};
+		C6CC541527B99B47002920B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6CC53F827B99B45002920B0 /* MediaMonksApp */;
+			targetProxy = C6CC541427B99B47002920B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C6CC541B27B99B47002920B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6CC541C27B99B47002920B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6CC541E27B99B47002920B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5A8067AF38BB309E665CB1 /* Pods-MediaMonksApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediaMonksApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YSWL4FA6AM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediaMonksApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediamonks.jihen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6CC541F27B99B47002920B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CBBB6611E0F5A6CFE6982C /* Pods-MediaMonksApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediaMonksApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YSWL4FA6AM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediaMonksApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediamonks.jihen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6CC542127B99B47002920B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3497F794035247942A310B27 /* Pods-MediaMonksAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YSWL4FA6AM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MediaMonksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaMonksApp.app/MediaMonksApp";
+			};
+			name = Debug;
+		};
+		C6CC542227B99B47002920B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3EDDE339E8167F0A49B7F2 /* Pods-MediaMonksAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YSWL4FA6AM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MediaMonksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaMonksApp.app/MediaMonksApp";
+			};
+			name = Release;
+		};
+		C6CC542427B99B47002920B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4F83951E43517D28F69F2E /* Pods-MediaMonksApp-MediaMonksAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YSWL4FA6AM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MediaMonksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediaMonksApp;
+			};
+			name = Debug;
+		};
+		C6CC542527B99B47002920B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1635F5F61A1F85C0D6A05F /* Pods-MediaMonksApp-MediaMonksAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YSWL4FA6AM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MediaMonksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediaMonksApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6CC53F427B99B45002920B0 /* Build configuration list for PBXProject "MediaMonksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CC541B27B99B47002920B0 /* Debug */,
+				C6CC541C27B99B47002920B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CC541D27B99B47002920B0 /* Build configuration list for PBXNativeTarget "MediaMonksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CC541E27B99B47002920B0 /* Debug */,
+				C6CC541F27B99B47002920B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CC542027B99B47002920B0 /* Build configuration list for PBXNativeTarget "MediaMonksAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CC542127B99B47002920B0 /* Debug */,
+				C6CC542227B99B47002920B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CC542327B99B47002920B0 /* Build configuration list for PBXNativeTarget "MediaMonksAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CC542427B99B47002920B0 /* Debug */,
+				C6CC542527B99B47002920B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6CC53F127B99B45002920B0 /* Project object */;
+}
