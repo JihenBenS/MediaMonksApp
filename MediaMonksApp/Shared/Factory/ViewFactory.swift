@@ -2,6 +2,7 @@ import UIKit
 
 protocol ViewFactory {
     func mainView(router: AlbumsRouterProtocol) -> MainView
+    func photosListView(viewModel: PhotosViewModel) -> PhotosListView
 }
 
 class SwiftUIFactory: ViewFactory {
@@ -11,5 +12,9 @@ class SwiftUIFactory: ViewFactory {
         let presenter = AlbumsPresenter(interactor: interactor, router: router)
         let store = AlbumsStore(presenter: presenter)
         return MainView(store: store)
+    }
+
+    func photosListView(viewModel: PhotosViewModel) -> PhotosListView {
+        return PhotosListView()
     }
 }

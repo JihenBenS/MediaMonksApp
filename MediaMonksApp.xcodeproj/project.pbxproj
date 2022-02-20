@@ -25,6 +25,8 @@
 		C6C0832C27C2C32400A12674 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832B27C2C32400A12674 /* ViewFactory.swift */; };
 		C6C0832E27C2C39A00A12674 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832D27C2C39A00A12674 /* Constants.swift */; };
 		C6C0833027C2C58700A12674 /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0832F27C2C58700A12674 /* AlbumsService.swift */; };
+		C6C0833927C2D20500A12674 /* PhotosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0833327C2D20500A12674 /* PhotosListView.swift */; };
+		C6C0833F27C2D2E600A12674 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0833E27C2D2E600A12674 /* PhotoViewModel.swift */; };
 		C6CC540127B99B47002920B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CC540027B99B47002920B0 /* Assets.xcassets */; };
 		C6CC540E27B99B47002920B0 /* MediaMonksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC540D27B99B47002920B0 /* MediaMonksAppTests.swift */; };
 		C6CC541827B99B47002920B0 /* MediaMonksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC541727B99B47002920B0 /* MediaMonksAppUITests.swift */; };
@@ -75,6 +77,8 @@
 		C6C0832B27C2C32400A12674 /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		C6C0832D27C2C39A00A12674 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6C0832F27C2C58700A12674 /* AlbumsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
+		C6C0833327C2D20500A12674 /* PhotosListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListView.swift; sourceTree = "<group>"; };
+		C6C0833E27C2D2E600A12674 /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		C6CC53F927B99B45002920B0 /* MediaMonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CC540027B99B47002920B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6CC540927B99B47002920B0 /* MediaMonksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMonksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +228,15 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		C6C0833127C2D20500A12674 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0833E27C2D2E600A12674 /* PhotoViewModel.swift */,
+				C6C0833327C2D20500A12674 /* PhotosListView.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
 		C6CC53F027B99B45002920B0 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +264,7 @@
 			children = (
 				C699B20227C00ED500B7CE17 /* MediaMonksApp.swift */,
 				C6C0831127C2C27F00A12674 /* Main */,
+				C6C0833127C2D20500A12674 /* Photos */,
 				C692D48427BAD7D80040C503 /* Shared */,
 				C6CC540027B99B47002920B0 /* Assets.xcassets */,
 				C6C0830A27C2BAF300A12674 /* Preview Content */,
@@ -540,7 +554,9 @@
 				C6C0831B27C2C27F00A12674 /* MainView.swift in Sources */,
 				C699B20327C00ED500B7CE17 /* MediaMonksApp.swift in Sources */,
 				C6CC542E27B9A915002920B0 /* Photo.swift in Sources */,
+				C6C0833F27C2D2E600A12674 /* PhotoViewModel.swift in Sources */,
 				C6C0831827C2C27F00A12674 /* AlbumsRouter.swift in Sources */,
+				C6C0833927C2D20500A12674 /* PhotosListView.swift in Sources */,
 				C6C0831D27C2C27F00A12674 /* AlbumsStore.swift in Sources */,
 				C6C0833027C2C58700A12674 /* AlbumsService.swift in Sources */,
 				C6C0832727C2C30A00A12674 /* ImageViewModifier.swift in Sources */,

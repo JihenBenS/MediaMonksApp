@@ -27,4 +27,8 @@ class AlbumsStore: ObservableObject {
                 self?.viewModel.state = .content(receivedValue)
             }
     }
+
+    func photosListView(elements: [Photo]) -> PhotosListView {
+        return presenter.photosListView(elements: elements)
+    }
 }

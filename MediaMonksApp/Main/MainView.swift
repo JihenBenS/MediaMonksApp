@@ -31,11 +31,13 @@ struct MainView: View {
                 ScrollView(showsIndicators: false) {
                     LazyVGrid (columns: columns, spacing: 28) {
                         ForEach(store.viewModel.albums) { element in
+                            NavigationLink(destination: store.photosListView(elements: element.photos)) {
                                 ImageFetcher(urlImage: element.cover)
                                 .modifier(ImageGradiantModifier(title: element.name,
                                                                 photosCount: element.photosCount))
                                 .frame(maxHeight: 180)
                                 .cornerRadius(12)
+                            }
                         }
                     }
                     .padding([.bottom, .top], 8)
