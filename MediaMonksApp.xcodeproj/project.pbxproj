@@ -240,6 +240,7 @@
 		C6CC53F027B99B45002920B0 = {
 			isa = PBXGroup;
 			children = (
+				C6CC542B27B99FD9002920B0 /* db.json */,
 				C6CC53FB27B99B45002920B0 /* MediaMonksApp */,
 				C6CC540C27B99B47002920B0 /* MediaMonksAppTests */,
 				C6CC541627B99B47002920B0 /* MediaMonksAppUITests */,
@@ -268,7 +269,6 @@
 				C692D48427BAD7D80040C503 /* Shared */,
 				C6CC540027B99B47002920B0 /* Assets.xcassets */,
 				C6C0830A27C2BAF300A12674 /* Preview Content */,
-				C6CC542B27B99FD9002920B0 /* db.json */,
 				C6CC544527B9CE8B002920B0 /* Info.plist */,
 			);
 			path = MediaMonksApp;
