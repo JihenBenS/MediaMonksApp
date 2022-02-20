@@ -1,0 +1,260 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name": "Memes",
+      "coverUrl": "https://media.wired.co.uk/photos/607d91994d40fbb952b6ad64/16:9/w_2992,h_1683,c_limit/wired-meme-nft-brian.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://imgflip.com/s/meme/Futurama-Fry.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Suspicious meme"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://i.kym-cdn.com/entries/icons/original/000/017/618/pepefroggie.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Pepe pepe pepe"
+              },
+              {
+                "id": 3,
+                "photoUrl": "https://i.pinimg.com/736x/10/7a/97/107a97ca5bd4a571edcebec54a66fc32.jpg",
+                "date": 1645373348,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "This is fine."
+              }
+        ]
+    },
+    {
+      "id": 2,
+      "name": "France",
+      "coverUrl": "https://www.planetware.com/photos-large/F/eiffel-tower.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://media.tacdn.com/media/attractions-splice-spp-400x400/0b/27/57/1d.jpg",
+              "date": 1645373348,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Sunny Day"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/CoverFrance-in-June0310.jpg",
+                "date": 1645373348,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Sunny Day"
+              }
+        ]
+    },
+    {
+      "id": 3,
+      "name": "Trip",
+      "coverUrl": "https://www.fabhotels.com/blog/wp-content/uploads/2020/05/road-trip-hacks-tips-600.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://www.finnsaway.com/ydinfilet/wp-content/uploads/2018/08/Moscow/Moscow-FinnsAway-2018_05-768x512.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Sunny Day"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://www.francethisway.com/images/places/fullsize/strasbourg.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Sunny Day"
+              }
+        ]
+    },
+    {
+      "id": 4,
+      "name": "Daughter and me",
+      "coverUrl": "https://img1.parentune.com/images/blogs/Are-You-Planning-To-Adopt-A-Child-Check-Out-These-Rules--Regulations-1517990120.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://www.quickanddirtytips.com/sites/default/files/images/19991/mom-daughter-relationship-compressor.png",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Sunny Day"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://img1.parentune.com/images/blogs/Are-You-Planning-To-Adopt-A-Child-Check-Out-These-Rules--Regulations-1517990120.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Sunny Day"
+              }
+        ]
+    },
+    {
+      "id": 5,
+      "name": "Family",
+      "coverUrl": "https://ak.picdn.net/shutterstock/videos/1020812512/thumb/1.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://www.rachelstomb.org/wp-content/uploads/2019/11/images3025-5ddc5bc9d62a7-1024x680.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Sunny Day"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://ak.picdn.net/shutterstock/videos/1020812512/thumb/1.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Sunny Day"
+              }
+        ]
+    },
+    {
+      "id": 6,
+      "name": "Vegas",
+      "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Welcome_to_Fabulous_Las_Vegas.jpg/1200px-Welcome_to_Fabulous_Las_Vegas.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://www.authentikusa.com/images/section/images_list/1-dollarphotoclub-tomasz-zadja-le-mythique-panneau-de-las-vegas_4616.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Sunny Day"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://www.authentikusa.com/images/section/images_list/3-tour-limousine-las-vegas_5653.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Sunny Day"
+              }
+        ]
+    },
+    {
+      "id": 7,
+      "name": "Christmas",
+      "coverUrl": "https://b.rgbimg.com/users/d/dy/dyet/600/mlJFrMM.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://i.pinimg.com/736x/8e/e9/4f/8ee94f3470455fbe4e314d763f69ca89--pink-christmas-christmas-time.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Christmas decoration"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://b.rgbimg.com/users/d/dy/dyet/600/mlJFrMM.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Christmas decoration"
+              }
+        ]
+    },
+    {
+      "id": 8,
+      "name": "Work",
+      "coverUrl": "https://elodieenrose.fr/wp-content/uploads/2021/12/kaboompics_Everything20you20need20to20work20from20your20bed-2-600x460.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://elodieenrose.fr/wp-content/uploads/2021/12/kaboompics_Everything20you20need20to20work20from20your20bed-2-600x460.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Sunny Day"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://i.pinimg.com/736x/e6/f5/f0/e6f5f000176b538863dcf9693ddebaec.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Sunny Day"
+              }
+        ]
+    },
+    {
+      "id": 9,
+      "name": "Screenshots",
+      "coverUrl": "https://ded9.com/wp-content/uploads/2021/05/plain-screenshot-1.jpg",
+      "photos":
+        [
+          {
+              "id": 1,
+              "photoUrl": "https://ded9.com/wp-content/uploads/2021/05/plain-screenshot-1.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Screenshot-1"
+              },
+              {
+                "id": 2,
+                "photoUrl": "https://ded9.com/wp-content/uploads/2021/05/plain-screenshot-1.jpg",
+                "date": 1642106638,
+                "latitude": 36.806389,
+                "longitude": 10.181667,
+                "description": "Screenshot-2"
+              }
+        ]
+    },
+    {
+      "id": 10,
+      "name": "Drawings",
+      "coverUrl": "https://www.nicepng.com/png/detail/65-653918_macaroons-drawing-pikachu-vector-library-sketch.png",
+      "photos":
+      [
+        {
+            "id": 1,
+            "photoUrl": "https://i.pinimg.com/736x/56/2f/b8/562fb83f11e33eabf60176c58fa56cbc.jpg",
+            "date": 1642106638,
+            "latitude": 36.806389,
+            "longitude": 10.181667,
+            "description": "Pika Pika"
+            },
+            {
+              "id": 2,
+              "photoUrl": "https://i.pinimg.com/originals/84/4d/bf/844dbf7114c0b72dc3fbe042da047e60.jpg",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Pika Pika"
+            },
+            {
+              "id": 10,
+              "photoUrl": "https://www.nicepng.com/png/detail/65-653918_macaroons-drawing-pikachu-vector-library-sketch.png",
+              "date": 1642106638,
+              "latitude": 36.806389,
+              "longitude": 10.181667,
+              "description": "Pika Pika"
+            }
+      ]
+    }
+  ]
+}
