@@ -15,8 +15,8 @@
 
 - SwiftUI View.
 - Interactor: A class that mediates between the presenter and the data. It takes direction from the presenter.
-- Presenter: The “traffic cop” of the architecture, directing data between the view and interacto
-- Entity: Models
+- Presenter: The “traffic cop” of the architecture, directing data between the view and interactor.
+- Entity: Models.
 - Router or coordinator: controls navigation, instantiating the next screen and its components.
 
 ## External Dependencies
