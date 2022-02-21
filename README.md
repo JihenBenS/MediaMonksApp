@@ -1,7 +1,7 @@
 # MediaMonksApp
 
 ## Compatibility
-- Xcode: 13.2.1
+- Xcode: 13.1
 - Deployment target: 15.0
 
 ## Project Overview
