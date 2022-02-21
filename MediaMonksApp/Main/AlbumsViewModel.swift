@@ -1,5 +1,3 @@
-import Foundation
-
 struct AlbumsViewModel {
     struct Content {
         let elements: [AlbumViewModel]

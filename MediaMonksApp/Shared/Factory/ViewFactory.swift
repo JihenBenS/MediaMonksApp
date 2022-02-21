@@ -3,6 +3,7 @@ import UIKit
 protocol ViewFactory {
     func mainView(router: AlbumsRouterProtocol) -> MainView
     func photosListView(viewModel: PhotosViewModel) -> PhotosListView
+    func photoDetailsView(viewModel: PhotoDetailsViewModel) -> PhotoDetailsView
 }
 
 class SwiftUIFactory: ViewFactory {
@@ -15,6 +16,17 @@ class SwiftUIFactory: ViewFactory {
     }
 
     func photosListView(viewModel: PhotosViewModel) -> PhotosListView {
-        return PhotosListView()
+        let router = PhotosRouter(viewFactory: SwiftUIFactory())
+        let presenter = PhotosPresenter(router: router)
+        let store = PhotosStore(viewModel: viewModel,
+                                presenter: presenter)
+        return PhotosListView(store: store)
+    }
+
+    func photoDetailsView(viewModel: PhotoDetailsViewModel) -> PhotoDetailsView {
+        let presenter = PhotoDetailsPresenter()
+        let store = PhotoDetailsStore(viewModel: viewModel,
+                                      presenter: presenter)
+        return PhotoDetailsView(store: store)
     }
 }

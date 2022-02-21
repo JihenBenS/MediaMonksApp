@@ -1,6 +1,3 @@
-import Foundation
-import Accelerate
-
 protocol AlbumsRouterProtocol: AnyObject {
     func photosListView(viewModel: PhotosViewModel) -> PhotosListView
 }
