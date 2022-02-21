@@ -4,6 +4,7 @@ struct PhotoDetailsView: View {
     @StateObject var store: PhotoDetailsStore
     let fontSize: CGFloat = 16
     let iconSize: CGFloat = 24
+    @State var appeared: Double = 0
 
     var body: some View {
         createImageDetails(stringDate: store.viewModel.stringDate ?? "No date",
@@ -44,5 +45,8 @@ struct PhotoDetailsView: View {
             }
             Spacer()
         }
+        .animation(.easeOut, value: appeared)
+        .onAppear {self.appeared = 1.0}
+        .onDisappear {self.appeared = 0.0}
     }
 }
