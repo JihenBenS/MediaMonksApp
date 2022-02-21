@@ -51,5 +51,6 @@ struct MainView: View {
             .navigationBarTitleDisplayMode(.inline)
         }
         .accentColor(Color("brightPink"))
+        .transition(.opacity.animation(.spring()))
     }
 }

@@ -10,7 +10,7 @@ extension XCTestCase {
         file: StaticString = #file,
         line: UInt = #line
     ) throws -> T.Output {
-        //We are using Swift's Result type to keep track of the result of our Combine pipeline:
+        // We are using Swift's Result type to keep track of the result of our Combine pipeline:
         var result: Result<T.Output, Error>?
         let expectation = self.expectation(description: description)
 
@@ -50,4 +50,3 @@ extension XCTestCase {
         return try unwrappedResult.get()
     }
 }
-

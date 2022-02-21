@@ -6,6 +6,7 @@ struct PhotosListView: View {
     let columns = [
         GridItem(.adaptive(minimum: 200), spacing: 28)
     ]
+    @State var appeared: Double = 0
 
     var body: some View {
         VStack {
@@ -15,6 +16,9 @@ struct PhotosListView: View {
                 .modifier(CurlyFont(size: headerFontSize))
                 .multilineTextAlignment(.leading)
                 .padding([.bottom, .top], 8)
+                .animation(.easeIn, value: appeared)
+                .onAppear {self.appeared = 1.0}
+                .onDisappear {self.appeared = 0.0}
             // MARK: Photos Display
             ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 28) {
