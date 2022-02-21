@@ -3,16 +3,17 @@ import Combine
 
 protocol AlbumsInteractorProtocol: AnyObject {
     func fetchAlbums()
-    var albumsPublisher: CurrentValueSubject<[Album],Error> { get }
+    var albumsPublisher: CurrentValueSubject<[Album], Error> { get }
 }
 
+// MARK: Business layer
 class AlbumsInteractor: AlbumsInteractorProtocol {
     private let albumsService: AlbumServiceProtocol
-    
+
     private var cancellables: Set<AnyCancellable> = []
-    
+
     var albumsPublisher: CurrentValueSubject<[Album], Error>
-    
+
     init(albumsService: AlbumServiceProtocol) {
         self.albumsService = albumsService
         self.albumsPublisher = CurrentValueSubject([])

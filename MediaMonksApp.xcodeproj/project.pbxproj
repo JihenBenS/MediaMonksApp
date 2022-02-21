@@ -203,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				C6C0831F27C2C30A00A12674 /* Modifiers */,
-				C6C0832327C2C30A00A12674 /* UIComponents */,
 				C6C0832427C2C30A00A12674 /* Fonts */,
 			);
 			path = UI;
@@ -217,13 +216,6 @@
 				C6C0832227C2C30A00A12674 /* ImageFetcher.swift */,
 			);
 			path = Modifiers;
-			sourceTree = "<group>";
-		};
-		C6C0832327C2C30A00A12674 /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		C6C0832427C2C30A00A12674 /* Fonts */ = {

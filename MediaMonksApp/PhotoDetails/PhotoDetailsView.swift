@@ -18,22 +18,23 @@ struct PhotoDetailsView: View {
             ImageFetcher(urlImage: store.viewModel.photoUrl)
                 .cornerRadius(8)
                 .scaledToFit()
+            // MARK: Photos Informations
             VStack(alignment: .leading, spacing: 8) {
-                HStack() {
+                HStack {
                     Image(systemName: "calendar")
                         .resizable()
                         .frame(width: iconSize, height: iconSize)
                     Text(stringDate)
                         .modifier(AppStandardFont(size: fontSize))
                 }
-                HStack() {
+                HStack {
                     Image(systemName: "location.square")
                         .resizable()
                         .frame(width: iconSize, height: iconSize)
                     Text(address)
                         .modifier(AppStandardFont(size: fontSize))
                 }
-                HStack() {
+                HStack {
                     Image(systemName: "list.bullet.rectangle")
                         .resizable()
                         .frame(width: iconSize, height: iconSize)

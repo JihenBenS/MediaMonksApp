@@ -12,7 +12,7 @@ class PhotoDetailsPresenter: PhotoDetailsPresenterProtocol {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
         dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = "dd MMMM yyyy"
+        dateFormatter.dateFormat = "dd MMMM yyyy - hh:mm"
         return dateFormatter
     }()
 
@@ -23,17 +23,17 @@ class PhotoDetailsPresenter: PhotoDetailsPresenterProtocol {
     }
 
     func getAddressFromLatLon(latitude: Double?, longitude: Double?) async -> String {
-        var addressString : String = ""
+        var addressString: String = ""
         guard let latitude = latitude, let longitude = longitude else {
             return ""
         }
 
-        var center : CLLocationCoordinate2D = CLLocationCoordinate2D()
+        var center: CLLocationCoordinate2D = CLLocationCoordinate2D()
         let ceo: CLGeocoder = CLGeocoder()
         center.latitude = latitude
         center.longitude = longitude
 
-        let loc: CLLocation = CLLocation(latitude:center.latitude, longitude: center.longitude)
+        let loc: CLLocation = CLLocation(latitude: center.latitude, longitude: center.longitude)
 
         do {
             let placemarks = try await ceo.reverseGeocodeLocation(loc)

@@ -9,7 +9,7 @@ struct ImageFetcher: View {
     init(urlImage: String) {
         self.urlImage = urlImage
     }
-    
+
     var body: some View {
         VStack {
             KFImage(URL(string: urlImage)!)
