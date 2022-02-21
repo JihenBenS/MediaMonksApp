@@ -1,3 +1,5 @@
+import SwiftUI
+
 public class PhotoDetailsViewModel: Equatable, Identifiable {
 
     public static func == (lhs: PhotoDetailsViewModel, rhs: PhotoDetailsViewModel) -> Bool {
@@ -26,11 +28,12 @@ public class PhotoDetailsViewModel: Equatable, Identifiable {
         return photo.longitude
     }
 
-    var stringDate: String?
-
-    var address: String?
-
     var photoDescription: String? {
         return photo.photoDescription
     }
+
+    var stringDate: String?
+    var address: String?
+    var image: UIImage?
+    var imageSize: String?
 }

@@ -1,5 +1,3 @@
-import Foundation
-
 struct PhotosViewModel {
     let albumTitle: String
     var photos: [PhotoViewModel]

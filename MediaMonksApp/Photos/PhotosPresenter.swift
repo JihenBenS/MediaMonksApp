@@ -1,8 +1,8 @@
 import Foundation
-import CoreLocation
 
 protocol PhotosPresenterProtocol: AnyObject {
     func getStringDate(from unixTimestampDate: Int) -> String
+    func photoDetailsView(photo: Photo) -> PhotoDetailsView
 }
 
 class PhotosPresenter: PhotosPresenterProtocol {
@@ -24,5 +24,12 @@ class PhotosPresenter: PhotosPresenterProtocol {
         let date = Date(timeIntervalSince1970: TimeInterval(unixTimestampDate))
         let strDate = dateFormatter.string(from: date)
         return strDate
+    }
+}
+
+extension PhotosPresenter {
+    func photoDetailsView(photo: Photo) -> PhotoDetailsView {
+        let viewModel = PhotoDetailsViewModel(photo: photo)
+        return router.photoDetailsView(viewModel: viewModel)
     }
 }

@@ -1,6 +1,4 @@
-import Foundation
 import SwiftUI
-import Accelerate
 
 class PhotosStore: ObservableObject {
     private var presenter: PhotosPresenterProtocol
@@ -17,5 +15,9 @@ class PhotosStore: ObservableObject {
         viewModel.photos.forEach {
             $0.stringDate = presenter.getStringDate(from: $0.unixTimestampDate)
         }
+    }
+
+    func photoDetailsView(photo: Photo) -> PhotoDetailsView {
+        return presenter.photoDetailsView(photo: photo)
     }
 }

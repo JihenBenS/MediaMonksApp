@@ -8,31 +8,30 @@ struct PhotosListView: View {
     ]
 
     var body: some View {
-        NavigationView {
-            VStack() {
-                Text(store.viewModel.albumTitle)
-                    .foregroundColor(Color("primary"))
-                    .modifier(CurlyFont(size: headerFontSize))
-                    .multilineTextAlignment(.leading)
-                    .padding([.bottom, .top], 8)
-                ScrollView(showsIndicators: false) {
-                    LazyVGrid (columns: columns, spacing: 28) {
-                        ForEach(store.viewModel.photos) { element in
-                            Text(element.stringDate ?? "- No Date -")
-                                .bold()
+        VStack() {
+            Text(store.viewModel.albumTitle)
+                .foregroundColor(Color("primary"))
+                .modifier(CurlyFont(size: headerFontSize))
+                .multilineTextAlignment(.leading)
+                .padding([.bottom, .top], 8)
+            ScrollView(showsIndicators: false) {
+                LazyVGrid (columns: columns, spacing: 28) {
+                    ForEach(store.viewModel.photos) { element in
+                        NavigationLink(destination: store.photoDetailsView(photo: element.photo)) {
                             ImageFetcher(urlImage: element.photoUrl)
                                 .frame(maxHeight: 280)
                                 .cornerRadius(12)
                             }
-                    }
-                    .padding([.bottom, .top], 16)
+                        Text(element.stringDate ?? "- No Date -")
+                            .bold()
+                        }
                 }
+                .padding([.bottom, .top], 16)
             }
             .padding([.trailing, .leading], 36)
-            .padding(.top, -60)
-            .navigationTitle("")
-            .navigationBarHidden(true)
         }
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         .accentColor(Color("brightPink"))
     }
 }

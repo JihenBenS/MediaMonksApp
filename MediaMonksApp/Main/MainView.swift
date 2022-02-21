@@ -46,6 +46,7 @@ struct MainView: View {
             .padding([.trailing, .leading], 36)
             .navigationTitle("")
             .navigationBarHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
         }
         .accentColor(Color("brightPink"))
     }

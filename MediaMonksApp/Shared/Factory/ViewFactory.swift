@@ -24,6 +24,9 @@ class SwiftUIFactory: ViewFactory {
     }
 
     func photoDetailsView(viewModel: PhotoDetailsViewModel) -> PhotoDetailsView {
-        return PhotoDetailsView()
+        let presenter = PhotoDetailsPresenter()
+        let store = PhotoDetailsStore(viewModel: viewModel,
+                                      presenter: presenter)
+        return PhotoDetailsView(store: store)
     }
 }

@@ -1,5 +1,3 @@
-import Foundation
-
 protocol PhotosRouterProtocol: AnyObject {
     func photoDetailsView(viewModel: PhotoDetailsViewModel) -> PhotoDetailsView
 }
