@@ -8,12 +8,12 @@ protocol AlbumsPresenterProtocol: AnyObject {
 
 class AlbumsPresenter: AlbumsPresenterProtocol {
     var albumsPublisher: CurrentValueSubject<AlbumsViewModel.Content, Error>
-    
+
     private var cancellables: Set<AnyCancellable> = []
 
     private let router: AlbumsRouterProtocol
     private let interactor: AlbumsInteractorProtocol
-    
+
     init(interactor: AlbumsInteractorProtocol,
          router: AlbumsRouterProtocol) {
         self.interactor = interactor
@@ -43,13 +43,14 @@ extension AlbumsPresenter {
     }
 
     func convertToViewModel(albums: [Album]) -> AlbumsViewModel.Content {
-        let elements = albums.map{
+        let elements = albums.map {
             AlbumViewModel(album: $0)
         }
         return AlbumsViewModel.Content(elements: elements)
     }
 }
 
+// MARK: Routing
 extension AlbumsPresenter {
     func photosListView(albumTitle: String, elements: [Photo]) -> PhotosListView {
         let viewModel =  PhotosViewModel(albumTitle: albumTitle, photos: elements.map {

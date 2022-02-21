@@ -8,14 +8,16 @@ struct PhotosListView: View {
     ]
 
     var body: some View {
-        VStack() {
+        VStack {
+            // MARK: View Header
             Text(store.viewModel.albumTitle)
                 .foregroundColor(Color("primary"))
                 .modifier(CurlyFont(size: headerFontSize))
                 .multilineTextAlignment(.leading)
                 .padding([.bottom, .top], 8)
+            // MARK: Photos Display
             ScrollView(showsIndicators: false) {
-                LazyVGrid (columns: columns, spacing: 28) {
+                LazyVGrid(columns: columns, spacing: 28) {
                     ForEach(store.viewModel.photos) { element in
                         NavigationLink(destination: store.photoDetailsView(photo: element.photo)) {
                             ImageFetcher(urlImage: element.photoUrl)

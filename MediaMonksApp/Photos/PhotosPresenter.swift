@@ -15,7 +15,6 @@ class PhotosPresenter: PhotosPresenterProtocol {
         return dateFormatter
     }()
 
-    
     init(router: PhotosRouterProtocol) {
         self.router = router
     }

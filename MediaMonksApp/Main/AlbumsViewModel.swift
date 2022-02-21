@@ -27,13 +27,14 @@ struct AlbumsViewModel {
     }
 }
 
+// MARK: Single album viewModel
 public class AlbumViewModel: Equatable, Identifiable {
 
     public static func == (lhs: AlbumViewModel, rhs: AlbumViewModel) -> Bool {
         return lhs.name == rhs.name &&
         lhs.cover == rhs.cover
     }
-    
+
     let album: Album
     init(album: Album) {
         self.album = album

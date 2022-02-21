@@ -11,7 +11,8 @@ struct MainView: View {
 
     var body: some View {
         NavigationView {
-            VStack() {
+            VStack {
+                // MARK: View Header
                 HStack(alignment: .center, spacing: 10) {
                     Text("My Collection")
                         .foregroundColor(Color("primary"))
@@ -28,8 +29,9 @@ struct MainView: View {
                     })
                 }
                 .padding(.top, 24)
+                // MARK: Albums Display
                 ScrollView(showsIndicators: false) {
-                    LazyVGrid (columns: columns, spacing: 28) {
+                    LazyVGrid(columns: columns, spacing: 28) {
                         ForEach(store.viewModel.albums) { element in
                             NavigationLink(destination: store.photosListView(albumTitle: element.name, elements: element.photos)) {
                                 ImageFetcher(urlImage: element.cover)

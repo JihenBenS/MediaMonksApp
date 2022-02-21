@@ -1,5 +1,3 @@
-import Foundation
-
 struct Photo: Codable {
     let id: Int
     let photoUrl: String
